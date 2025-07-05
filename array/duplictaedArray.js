@@ -31,9 +31,13 @@ const filteredArray = fruits.filter(
 //  Option 5: Using forEach and includes inside a custom function
 function uniqueFunction(array) {
   const uniqueItem = [];
+  console.log('intatial value',uniqueItem)
 
-  array.forEach((element) => {
-    if (!uniqueItem.includes(element)) {
+  array.forEach((element,index) => {
+    if (!uniqueItem.includes(element,index)) {
+       console.log(`\nStep ${index + 1}:`);
+      console.log("Checking element:", element);
+    console.log("Does uniqueItem include it?", uniqueItem.includes(element));
       uniqueItem.push(element);
     }
   });
@@ -42,7 +46,7 @@ function uniqueFunction(array) {
 }
 
 const unique3 = uniqueFunction(fruits);
-// console.log(unique3); // [ 'apple', 'banana', 'orange', 'mango', 'grape', 'pineapple' ]
+console.log(unique3); // [ 'apple', 'banana', 'orange', 'mango', 'grape', 'pineapple' ]
 
 // ✅ Option 6: Using reduce and includes
 function removeDuplicatedArrayWithReduce(array) {
