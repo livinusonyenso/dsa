@@ -1,0 +1,1 @@
+Press Ctrl/Cmd + Shift + P to display the editor's command palette, and then type Quokka
