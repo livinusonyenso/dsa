@@ -11,7 +11,10 @@ const Reversinter = (n) =>{
     return parseInt(rversed) * Math.sign(n)
 }
 
-console.log(Reversinter(-12345));
+// console.log(Reversinter(-12345));
+console.log("================");
+console.log("variable:", Reversinter(-12345));
+console.log("==================");
 
 
 //Other Ways to Achieve This
