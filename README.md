@@ -474,3 +474,22 @@ git push origin feature-branch
 ---
 
 *Remember: Practice these methods regularly, and always check the documentation for the latest features and browser support!*
+## 📊 Big O Notation – Time & Space Complexity
+
+**Big O Notation** helps us describe how efficient an algorithm is:  
+- **Time Complexity** → how long an algorithm will take to run as input grows.  
+- **Space Complexity** → how much memory an algorithm will need as input grows.  
+
+### Common Big O Cases
+
+- **O(1) – Constant Time**  
+  The execution time remains constant, regardless of input size.  
+
+  ```js
+// Example: Accessing an element in an array by index
+const numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers[2]); // Always O(1)
+
+- **O(n) – Linear Time**  
+  As the number of input items increases, the time it takes grows proportionally.  
