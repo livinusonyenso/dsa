@@ -78,11 +78,30 @@ return temp
 
 }
 
+getFirst(){
+  return this.head
+}
+
+
+getLast(){
+  if(!this.head){
+    return null
+  }
+
+  let temp = this.head
+  while(temp){
+    if(!temp.next){
+      return temp
+    }
+    temp = temp.next
+  }
+}
  
 }
 
 const myLinkedList = new LinkedList(1);
 myLinkedList.push(10);
 // myLinkedList.pop()
-myLinkedList.unshift(0)
-console.log("-------", myLinkedList);
+// myLinkedList.unshift(0)
+
+console.log("-------", myLinkedList.getLast());
