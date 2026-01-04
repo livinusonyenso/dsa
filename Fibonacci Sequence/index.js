@@ -9,14 +9,14 @@
 // Keep going: 1 + 2 = 3, then 2 + 3 = 5, then 3 + 5 = 8, and so on
 
 // The golden rule: fib(n) = fib(n-1) + fib(n-2)
+
 const Fibonacci = (n) =>{
     const fib = [0,1]
-    for(let i = 2; i < n ; i++){
+    for(let i = 2; i < n; i++){
         fib[i] = fib[i - 1] + fib[i - 2]
     }
     return fib
 }
-
 
 console.log(Fibonacci(0));
 console.log(Fibonacci(1));

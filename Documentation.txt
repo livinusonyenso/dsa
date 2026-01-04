@@ -1,0 +1,124 @@
+Documentation
+02/01/2026
+Git & GitHub
+Today I explored version control fundamentals, learning how Git tracks changes and how GitHub enables collaboration.
+We have local and remote repository
+Repository Setup
+•	git init — Initialize a new local repository
+•	git clone — Create a local copy of a remote repository
+•	git fork — Create a personal copy of someone else's repository on GitHub
+Staging & Committing
+•	git commit — Save changes to the local repository with a descriptive message
+Branching & Navigation
+•	git branch — Create, list, or delete branches
+•	git checkout — Switch between branches or restore files
+Merging & Integration
+•	git merge — Combine changes from one branch into another
+•	git rebase — Reapply commits on top of another branch for a cleaner history
+•	git cherry-pick — Apply a specific commit from one branch to another
+•	git conflict — Resolve conflicts when merging divergent changes
+•	git stash
+•	git status
+Remote Collaboration
+•	git fetch — Download changes from a remote repository without merging
+•	git pull — Fetch and merge remote changes in one step
+•	git push — Upload local commits to a remote repository
+Undoing Changes
+•	git reset — Move HEAD to a previous commit, optionally modifying staging/working directory
+•	git revert — Create a new commit that undoes a previous commit
+•	git diff,git stage,git stash
+•	git restore — Discard uncommitted changes in the working directory
+________________________________________
+Data Structures & Algorithms
+Studied algorithm efficiency and how to analyze performance.
+Time & Space Complexity
+•	Time Complexity — Measures how execution time grows as input size increases
+•	Space Complexity — Measures how memory usage grows as input size increases
+Big O Notation
+A mathematical notation to describe the upper bound of an algorithm's growth rate:
+Complexity	Name	Example
+O(1)	Constant	Accessing an array element
+O(log n)	Logarithmic	Binary search
+O(n)	Linear	Single loop through an array
+O(n²)	Quadratic	Two nested loops
+O(n³)	Cubic	Three nested loops
+________________________________________
+Key Takeaways
+•	Git provides powerful tools for tracking changes and collaborating with others
+•	Understanding Big O notation is essential for writing efficient code
+•	Nested loops significantly increase time complexity
+
+LEARNING JOURNEY DOCUMENTATION
+Date: 02/01/2026
+________________________________________
+GIT & VERSION CONTROL (CONVENTIONAL COMMITS)
+Conventional Commit Structure
+A conventional commit follows this format:
+type(scope?): description
+optional body
+optional footer
+Common Commit Types
+build – changes that affect the build system or dependencies
+ci – changes to CI configuration files and scripts
+docs – documentation changes only
+feat – introducing a new feature
+fix – fixing a bug
+perf – performance improvements
+refactor – code changes that do not fix bugs or add features
+style – formatting changes such as spacing, semicolons, linting
+test – adding or updating tests
+chore – maintenance tasks
+Conventional Commit with Scope
+Scopes describe the part of the application affected by the change.
+Examples:
+feat(auth): add login validation
+fix(ui): resolve button alignment issue
+Breaking Changes
+Breaking changes can be defined in two ways:
+Using an exclamation mark (!) after the type or scope
+Example: feat(api)!: remove deprecated endpoints
+Using BREAKING CHANGE in capital letters inside the commit footer
+Writing Commit Messages in VS Code Without -m
+To open the commit message editor directly in VS Code, run:
+git commit
+Editing Commit Messages
+To edit the most recent commit:
+git commit --amend
+To edit older commits:
+First, view commit history:
+git log --all --graph
+Then use interactive rebase:
+git rebase -i HEAD~n
+Enforcing Good Conventional Commits
+Use the commitlint package to validate commit messages
+This ensures consistency and prevents incorrect commit formats
+Semantic Release
+Semantic release uses conventional commits to automatically:
+Generate version numbers
+Trigger GitHub Actions workflows
+Control CI/CD pipelines through YAML configuration files
+________________________________________
+DATA STRUCTURES AND ALGORITHMS (DSA)
+Key Concepts Learned
+Objects
+Object access is constant time
+Time complexity: O(1)
+Arrays
+Arrays are linear data structures
+Traversal time complexity: O(n)
+Searching
+Linear search has time complexity: O(n)
+Other Linear Data Structures
+Linked List
+Stack
+Queue
+Deque
+________________________________________
+SYSTEM DESIGN FUNDAMENTALS
+Scalability
+The ability of a system to handle increased load such as more users, traffic, or data
+Throughput
+The number of requests or operations a system can handle per unit of time
+Latency
+The time it takes for a single request to be processed from start to finish
+
